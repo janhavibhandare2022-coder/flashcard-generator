@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+Flashcard Generator App 🗂️
+A modern, responsive Single Page Application (SPA) built as an AlmaBetter Frontend Capstone Project. It enables users to create customizable flashcard sets, study them through an interactive carousel, persist cards locally, share decks via direct links, export them to JSON, and print study materials.
+🔗 Project Links
+Live Application URL: https://flashcard-generator-woad-sigma.vercel.app
+GitHub Repository: https://github.com/janhavibhandare2022-coder/flashcard-generator
+📋 Features & Implementation (Per AlmaBetter Guidelines)
+1. Create Flashcard Page
+Group Creation: Group Name (Title), Description, and optional Group Image upload.
+Dynamic Terms Array: Add multiple terms and definitions dynamically using Formik's FieldArray.
+Term Actions: Individual terms can be deleted using the trash icon or edited before group creation.
+Client-Side Validation: Form inputs validated strictly using Formik and Yup.
+2. My Flashcards Page
+Overview Dashboard: Grid view displaying all created flashcard decks.
+Metadata Display: Shows thumbnail, title, short description, and total card counts.
+Quick Actions: Navigate to any deck via the View Cards button or delete decks from storage.
+3. Flashcard Details / Study Mode
+Split Layout: Sidebar list of terms on the left; active term details and definition in the center.
+Interactive Carousel: Previous and Next arrow navigation with a positional indicator (e.g., 1 / 2).
+Share Modal: Share deck modal with one-click clipboard link copying and direct social share actions.
+Export & Print:
+Download: Exports the current flashcard group to a structured .json file.
+Print: Clean print-optimized document view for study sheets.
+4. Architecture & Persistence
+State Management: Centralized state with Redux Toolkit.
+Data Persistence: Synchronized with the browser's LocalStorage API so cards are retained across refreshes and restarts.
+SPA Routing & Deep Links: react-router-dom integrated with vercel.json rewrites to prevent 404 errors on direct navigation or page refresh.
+🛠️ Tech Stack & Packages
+React.js (Frontend library)
+React Router DOM (Single Page Application routing)
+Redux Toolkit & React-Redux (Global state management)
+Formik & Yup (Form management and validation)
+Tailwind CSS (Responsive UI styling)
+React Icons (Interface icons)
+Vercel (Cloud hosting and continuous deployment)
+💻 Local Setup & Installation
+To run this application locally:
+1. Clone the repository:git clone https://github.com/janhavibhandare2022-coder/flashcard-generator.git
+cd flashcard-generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. Install all dependencies:npm install
+3. Run the local development server npm start
 
-## Available Scripts
+Open http://localhost:3000 in your browser.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Author
+Janhavi Bhandare
+GitHub:@janhavibhandare2022-coder
